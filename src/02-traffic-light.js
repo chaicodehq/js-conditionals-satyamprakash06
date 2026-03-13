@@ -23,4 +23,19 @@
  */
 export function getTrafficAction(color) {
   // Your code here
+  if(color == "green" || color == "Green" || color == "GREEN"){
+    return "GO";
+  }
+  else if(color == "yellow" || color == "Yellow" ||color == "YELLOW"){
+    return "SLOW DOWN";
+  }
+   else if(color == "red" || color == "Red" ||color == "RED"){
+    return "STOP";
+  }
+  else if(color == "flashing red" || color == "Flashing Red" ||color == "FLASHING RED"){
+    return "STOP AND PROCEED WITH CAUTION";
+  }
+  else{
+    return "INVALID SIGNAL";
+  }
 }
